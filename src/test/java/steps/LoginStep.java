@@ -23,7 +23,7 @@ public class LoginStep extends BaseUtil{
     }
 
     @Then("^I should see the userform page$")
-    public void iShouldSeeTheUserformPage() throws Throwable {
+    public void iShouldSeeTheCorrectPricing() throws Throwable {
 
 
         Assert.assertEquals("Its displayed", base.Driver.findElement(By.id("details")).isDisplayed(), true);
