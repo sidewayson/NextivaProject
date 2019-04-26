@@ -23,7 +23,7 @@ public class ExtentReportUtil extends BaseUtil {
 
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
         htmlReporter.config().setTheme(Theme.DARK);
-        htmlReporter.config().setDocumentTitle("Test report for Selenium Basic");
+        htmlReporter.config().setDocumentTitle("Test report");
         htmlReporter.config().setEncoding("utf-8");
         htmlReporter.config().setReportName("Test report");
 

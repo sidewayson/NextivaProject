@@ -1,6 +1,7 @@
 package steps;
 
 import Base.BaseUtil;
+import com.aventstack.extentreports.GherkinKeyword;
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
@@ -26,7 +27,7 @@ public class HomeStep extends BaseUtil{
     @Given("^I navigate to the Nextiva$")
     public void iNavigateToTheHomePage() throws Throwable {
 
-
+        //scenarioDef.createNode(new GherkinKeyword("Given"),"I navigate to the Nextiva");
         System.out.println("Navigate Nextiva Page");
         base.Driver.navigate().to("https://www.nextiva.com/");
     }
@@ -36,47 +37,18 @@ public class HomeStep extends BaseUtil{
 
     @And("^I navigate to the Voip Products$")
     public void iClickOnTheVoipProducts() throws Throwable {
+        //scenarioDef.createNode(new GherkinKeyword("And"),"I navigate to the Voip Products");
         HomePage page = new HomePage(base.Driver);
         page.ClickProduct();
     }
 
     @And("^I click on Office Products$")
     public void iClickOnTheOfficeProducts() throws Throwable {
+        //scenarioDef.createNode(new GherkinKeyword("And"),"I click on Office Products");
         HomePage page = new HomePage(base.Driver);
         base.Driver.get("https://www.nextiva.com/products/voip-phone-system.html");
         page.ClickOfficeProduct();
     }
 
-    @And("^I enter the following for Login$")
-    public void iEnterTheFollowingForHome(DataTable table) throws Throwable {
-        //Create an ArrayList
-        List<User> users =  new ArrayList<User>();
-        //Store all the users
-        users = table.asList(User.class);
-
-        HomePage page = new HomePage(base.Driver);
-
-       // for (User user: users){
-        //    page.Login(user.username, user.password);
-        //}
-    }
-
-    @And("^I enter ([^\"]*) and ([^\"]*)$")
-    public void iEnterUsernameAndPassword(String userName, String password) throws Throwable {
-        System.out.println("UserName is : " + userName);
-        System.out.println("Password is : " + password);
-    }
-
-
-
-    public class User {
-        public String username;
-        public String password;
-
-        public User(String userName, String passWord) {
-            username= userName;
-            password = passWord;
-        }
-    }
 
 }
