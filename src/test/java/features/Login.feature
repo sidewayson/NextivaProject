@@ -4,7 +4,7 @@ Feature: Nextiva Interview Sample
     Given I navigate to the Nextiva
     And I navigate to the Voip Products
     And I click on Office Products
-    #Then I should see the userform page
+    Then I should see the userform page
 
   #Scenario: Hopeful future employee applies for a job
     #Given I navigate to the Nextiva
