@@ -29,6 +29,12 @@ public class CareerStep extends BaseUtil{
         page.ClickJob();
     }
 
+    @Then("^I fill out Application for Nextiva job for SR. QA$")
+    public void iFilloutApplication() throws Throwable {
+        CareersPage page = new CareersPage(base.Driver);
+        base.Driver.get("https://boards.greenhouse.io/nextiva/jobs/4148378002");
+        page.ClickAndFillOut();
+    }
 
 
 

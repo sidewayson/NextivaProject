@@ -21,12 +21,7 @@ public class HomeStep extends BaseUtil{
         this.base = base;
     }
 
-    @Then("^I should see the userform page$")
-    public void iShouldSeeTheCorrectPricing() throws Throwable {
 
-
-        Assert.assertEquals("Its displayed", base.Driver.findElement(By.id("details")).isDisplayed(), true);
-    }
 
     @Given("^I navigate to the Nextiva$")
     public void iNavigateToTheHomePage() throws Throwable {
@@ -72,10 +67,6 @@ public class HomeStep extends BaseUtil{
         System.out.println("Password is : " + password);
     }
 
-    @Then("^I should see the userform page wrongly$")
-    public void iShouldSeeTheUserformPageWrongly() throws Throwable {
-        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("sdfgdsfsd")).isDisplayed(), false);
-    }
 
 
     public class User {

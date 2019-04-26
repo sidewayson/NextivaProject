@@ -5,6 +5,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class Hook extends BaseUtil{
@@ -42,6 +43,7 @@ public class Hook extends BaseUtil{
         }
         System.out.println("Afterhook");
         base.Driver.close();
+        base.Driver.quit();
 
     }
 
