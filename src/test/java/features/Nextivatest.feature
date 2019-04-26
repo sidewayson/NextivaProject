@@ -1,10 +1,10 @@
 Feature: Nextiva Interview Sample
 
-  #Scenario: Verify Voip Office Products
-    #Given I navigate to the Nextiva
-    #And I navigate to the Voip Products
-    #And I click on Office Products
-    #Then I validate the prices on the page
+  Scenario: Verify Voip Office Products
+    Given I navigate to the Nextiva
+    And I navigate to the Voip Products
+    And I click on Office Products
+   Then I validate the prices on the page
 
 
   Scenario: Hopeful future employee applies for a job

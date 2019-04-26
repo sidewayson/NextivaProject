@@ -50,5 +50,13 @@ public class HomeStep extends BaseUtil{
         page.ClickOfficeProduct();
     }
 
+    @Then("^I validate the prices on the page$")
+    public void iVerifyPrices() throws Throwable {
+        //scenarioDef.createNode(new GherkinKeyword("Then"),"I validate the prices on the page");
+        HomePage page = new HomePage(base.Driver);
+        base.Driver.get("https://www.nextiva.com/products/business-phone-service.html");
+        page.VerifyPrices();
+    }
+
 
 }
