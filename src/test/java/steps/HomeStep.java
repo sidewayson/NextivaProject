@@ -9,7 +9,6 @@ import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import pages.HomePage;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,11 +37,7 @@ public class HomeStep extends BaseUtil{
     }
 
 
-    @And("^I click login button$")
-    public void iClickLoginButton() throws Throwable {
-        HomePage page = new HomePage(base.Driver);
-        page.ClickLogin();
-    }
+
 
     @And("^I navigate to the Voip Products$")
     public void iClickOnTheVoipProducts() throws Throwable {

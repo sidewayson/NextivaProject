@@ -19,8 +19,8 @@ public class HomePage {
     @FindBy(how = How.XPATH, using = "//*[@id=\"nextos-voice\"]/div[2]/section[1]/div[2]/a[1]")
     public WebElement OfficeProducts;
 
-    @FindBy(how = How.NAME, using = "Login")
-    public WebElement btnLogin;
+    @FindBy(how = How.XPATH, using = "//*[@id=\"home\"]/footer/div[2]/div[2]/ul[5]/li[5]/a")
+    public WebElement careers;
 
     public void ClickProduct()
     {
@@ -33,9 +33,9 @@ public class HomePage {
         OfficeProducts.click();
     }
 
-    public void ClickLogin()
+    public void ClickCareers()
     {
-        btnLogin.submit();
+        careers.click();
     }
 
 

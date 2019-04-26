@@ -6,10 +6,9 @@ Feature: Nextiva Interview Sample
     And I click on Office Products
     #Then I should see the userform page
 
-  #Scenario: Hopeful future employee applies for a job
-    #Given I navigate to the Nextiva
-    #And I enter the following for Login
-     # | username | password      |
-      #| admin    | password |
+  Scenario: Hopeful future employee applies for a job
+    Given I navigate to the Nextiva
+    And I click on careers
+
     #And I click login button
     #Then I should see the userform page wrongly
